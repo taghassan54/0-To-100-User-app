@@ -1,4 +1,4 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/response/shipping_method_model.dart';
+import 'package:zero_to_100_user_app/data/model/response/shipping_method_model.dart';
 
 class ShippingModel{
   int shippingIndex;

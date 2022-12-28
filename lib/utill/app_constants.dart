@@ -1,9 +1,9 @@
-import 'package:flutter_sixvalley_ecommerce/data/model/response/language_model.dart';
+import 'package:zero_to_100_user_app/data/model/response/language_model.dart';
 
 class AppConstants {
-  static const String APP_NAME = '6valley';
+  static const String APP_NAME = 'Zero To 100';
   static const String APP_VERSION = '12.2';
-  static const String BASE_URL = 'https://nyonso.com';
+  static const String BASE_URL = 'https://0to100.store';
   static const String USER_ID = 'userId';
   static const String NAME = 'name';
   static const String CATEGORIES_URI = '/api/v1/categories';

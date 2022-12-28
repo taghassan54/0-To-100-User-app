@@ -4,22 +4,22 @@ import 'package:dio/dio.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:flutter_sixvalley_ecommerce/view/screen/order/order_details_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/main.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
+import 'package:zero_to_100_user_app/view/screen/order/order_details_screen.dart';
+import 'package:zero_to_100_user_app/main.dart';
+import 'package:zero_to_100_user_app/utill/app_constants.dart';
 import 'package:path_provider/path_provider.dart';
 
 class MyNotification {
 
   static Future<void> initialize(FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin) async {
     var androidInitialize = new AndroidInitializationSettings('notification_icon');
-    var iOSInitialize = new IOSInitializationSettings();
+    var iOSInitialize = new DarwinInitializationSettings();
     var initializationsSettings = new InitializationSettings(android: androidInitialize, iOS: iOSInitialize);
-    flutterLocalNotificationsPlugin.initialize(initializationsSettings, onSelectNotification: (String payload) async {
+    flutterLocalNotificationsPlugin.initialize(initializationsSettings, onDidReceiveNotificationResponse: (NotificationResponse  notificationResponse) async {
       try{
-        if(payload != null && payload.isNotEmpty) {
+        if(notificationResponse.payload != null && notificationResponse.payload.isNotEmpty) {
           MyApp.navigatorKey.currentState.push(
-              MaterialPageRoute(builder: (context) => OrderDetailsScreen(orderModel: null, orderId: int.parse(payload),orderType: 'default_type',)));
+              MaterialPageRoute(builder: (context) => OrderDetailsScreen(orderModel: null, orderId: int.parse(notificationResponse.payload),orderType: 'default_type',)));
         }
       }catch (e) {}
       return;

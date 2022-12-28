@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.u6amtech.flutter_sixvalley_ecom"
+    package="com.shift_tech.zeroto100.user"
     android:targetSandboxVersion="1">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -29,7 +29,7 @@
     </queries>
 
     <application
-        android:label="6Valley"
+        android:label="Zero To 100"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -37,7 +37,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCcr56ZxhkvdYntPYfiUmPruGo8kt4eqWk" />
+            android:value="AIzaSyDbLTDXLFsEil3KWYMkdYf6MfXm_yzY2ww" />
 
         <activity
             android:name=".MainActivity"

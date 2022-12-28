@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
+import 'package:zero_to_100_user_app/utill/color_resources.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 void showCustomSnackBar(String message, BuildContext context, {bool isError = true, bool isToaster = false}) {

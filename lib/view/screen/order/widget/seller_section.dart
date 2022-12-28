@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/chat_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/order_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/view/screen/chat/chat_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/view/basewidget/show_custom_snakbar.dart';
+import 'package:zero_to_100_user_app/provider/chat_provider.dart';
+import 'package:zero_to_100_user_app/provider/order_provider.dart';
+import 'package:zero_to_100_user_app/view/screen/chat/chat_screen.dart';
+import 'package:zero_to_100_user_app/localization/language_constrants.dart';
+import 'package:zero_to_100_user_app/utill/color_resources.dart';
+import 'package:zero_to_100_user_app/utill/custom_themes.dart';
+import 'package:zero_to_100_user_app/utill/dimensions.dart';
+import 'package:zero_to_100_user_app/view/basewidget/show_custom_snakbar.dart';
 import 'package:provider/provider.dart';
 
 class SellerSection extends StatelessWidget {

@@ -6,35 +6,35 @@ import 'package:flutter/material.dart';
 import 'package:flutter_downloader/flutter_downloader.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/facebook_login_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/featured_deal_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/google_sign_in_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/home_category_product_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/location_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/top_seller_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/wallet_transaction_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/view/screen/order/order_details_screen.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/auth_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/brand_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/cart_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/category_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/chat_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/coupon_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/localization_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/notification_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/onboarding_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/order_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/profile_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/search_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/seller_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/support_ticket_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/wishlist_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/dark_theme.dart';
-import 'package:flutter_sixvalley_ecommerce/theme/light_theme.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/app_constants.dart';
-import 'package:flutter_sixvalley_ecommerce/view/screen/splash/splash_screen.dart';
+import 'package:zero_to_100_user_app/provider/facebook_login_provider.dart';
+import 'package:zero_to_100_user_app/provider/featured_deal_provider.dart';
+import 'package:zero_to_100_user_app/provider/google_sign_in_provider.dart';
+import 'package:zero_to_100_user_app/provider/home_category_product_provider.dart';
+import 'package:zero_to_100_user_app/provider/location_provider.dart';
+import 'package:zero_to_100_user_app/provider/top_seller_provider.dart';
+import 'package:zero_to_100_user_app/provider/wallet_transaction_provider.dart';
+import 'package:zero_to_100_user_app/view/screen/order/order_details_screen.dart';
+import 'package:zero_to_100_user_app/provider/auth_provider.dart';
+import 'package:zero_to_100_user_app/provider/brand_provider.dart';
+import 'package:zero_to_100_user_app/provider/cart_provider.dart';
+import 'package:zero_to_100_user_app/provider/category_provider.dart';
+import 'package:zero_to_100_user_app/provider/chat_provider.dart';
+import 'package:zero_to_100_user_app/provider/coupon_provider.dart';
+import 'package:zero_to_100_user_app/provider/localization_provider.dart';
+import 'package:zero_to_100_user_app/provider/notification_provider.dart';
+import 'package:zero_to_100_user_app/provider/onboarding_provider.dart';
+import 'package:zero_to_100_user_app/provider/order_provider.dart';
+import 'package:zero_to_100_user_app/provider/profile_provider.dart';
+import 'package:zero_to_100_user_app/provider/search_provider.dart';
+import 'package:zero_to_100_user_app/provider/seller_provider.dart';
+import 'package:zero_to_100_user_app/provider/splash_provider.dart';
+import 'package:zero_to_100_user_app/provider/support_ticket_provider.dart';
+import 'package:zero_to_100_user_app/provider/theme_provider.dart';
+import 'package:zero_to_100_user_app/provider/wishlist_provider.dart';
+import 'package:zero_to_100_user_app/theme/dark_theme.dart';
+import 'package:zero_to_100_user_app/theme/light_theme.dart';
+import 'package:zero_to_100_user_app/utill/app_constants.dart';
+import 'package:zero_to_100_user_app/view/screen/splash/splash_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'di_container.dart' as di;
@@ -58,8 +58,8 @@ Future<void> main() async {
   await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
   int _orderID;
   if (notificationAppLaunchDetails?.didNotificationLaunchApp ?? false) {
-    _orderID = (notificationAppLaunchDetails.payload != null && notificationAppLaunchDetails.payload.isNotEmpty)
-        ? int.parse(notificationAppLaunchDetails.payload) : null;
+    _orderID = (notificationAppLaunchDetails.notificationResponse.payload != null && notificationAppLaunchDetails.notificationResponse.payload.isNotEmpty)
+        ? int.parse(notificationAppLaunchDetails.notificationResponse.payload) : null;
   }
   final RemoteMessage remoteMessage = await FirebaseMessaging.instance.getInitialMessage();
   if (remoteMessage != null) {

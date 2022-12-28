@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/helper/price_converter.dart';
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/auth_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/profile_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/wallet_transaction_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/view/basewidget/not_loggedin_widget.dart';
-import 'package:flutter_sixvalley_ecommerce/view/screen/wallet/widget/transaction_list_view.dart';
+import 'package:zero_to_100_user_app/helper/price_converter.dart';
+import 'package:zero_to_100_user_app/localization/language_constrants.dart';
+import 'package:zero_to_100_user_app/provider/auth_provider.dart';
+import 'package:zero_to_100_user_app/provider/profile_provider.dart';
+import 'package:zero_to_100_user_app/provider/theme_provider.dart';
+import 'package:zero_to_100_user_app/provider/wallet_transaction_provider.dart';
+import 'package:zero_to_100_user_app/utill/color_resources.dart';
+import 'package:zero_to_100_user_app/utill/dimensions.dart';
+import 'package:zero_to_100_user_app/utill/images.dart';
+import 'package:zero_to_100_user_app/view/basewidget/not_loggedin_widget.dart';
+import 'package:zero_to_100_user_app/view/screen/wallet/widget/transaction_list_view.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 class WalletScreen extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/chat_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
+import 'package:zero_to_100_user_app/provider/chat_provider.dart';
+import 'package:zero_to_100_user_app/utill/color_resources.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 

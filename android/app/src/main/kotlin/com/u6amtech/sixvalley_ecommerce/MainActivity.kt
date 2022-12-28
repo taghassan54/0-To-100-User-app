@@ -1,4 +1,4 @@
-package com.u6amtech.flutter_sixvalley_ecom
+package com.shift_tech.zeroto100.user
 
 import io.flutter.embedding.android.FlutterActivity
 

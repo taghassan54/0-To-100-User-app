@@ -1,22 +1,22 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_sixvalley_ecommerce/data/model/response/user_info_model.dart';
+import 'package:zero_to_100_user_app/data/model/response/user_info_model.dart';
 
-import 'package:flutter_sixvalley_ecommerce/localization/language_constrants.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/auth_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/profile_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/splash_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/provider/theme_provider.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/color_resources.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/custom_themes.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/dimensions.dart';
-import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
-import 'package:flutter_sixvalley_ecommerce/view/basewidget/animated_custom_dialog.dart';
-import 'package:flutter_sixvalley_ecommerce/view/basewidget/button/custom_button.dart';
-import 'package:flutter_sixvalley_ecommerce/view/basewidget/textfield/custom_password_textfield.dart';
-import 'package:flutter_sixvalley_ecommerce/view/basewidget/textfield/custom_textfield.dart';
-import 'package:flutter_sixvalley_ecommerce/view/screen/more/widget/sign_out_confirmation_dialog.dart';
+import 'package:zero_to_100_user_app/localization/language_constrants.dart';
+import 'package:zero_to_100_user_app/provider/auth_provider.dart';
+import 'package:zero_to_100_user_app/provider/profile_provider.dart';
+import 'package:zero_to_100_user_app/provider/splash_provider.dart';
+import 'package:zero_to_100_user_app/provider/theme_provider.dart';
+import 'package:zero_to_100_user_app/utill/color_resources.dart';
+import 'package:zero_to_100_user_app/utill/custom_themes.dart';
+import 'package:zero_to_100_user_app/utill/dimensions.dart';
+import 'package:zero_to_100_user_app/utill/images.dart';
+import 'package:zero_to_100_user_app/view/basewidget/animated_custom_dialog.dart';
+import 'package:zero_to_100_user_app/view/basewidget/button/custom_button.dart';
+import 'package:zero_to_100_user_app/view/basewidget/textfield/custom_password_textfield.dart';
+import 'package:zero_to_100_user_app/view/basewidget/textfield/custom_textfield.dart';
+import 'package:zero_to_100_user_app/view/screen/more/widget/sign_out_confirmation_dialog.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 
