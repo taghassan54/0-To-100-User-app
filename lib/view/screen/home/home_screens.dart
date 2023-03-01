@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 import 'package:zero_to_100_user_app/helper/product_type.dart';
 import 'package:zero_to_100_user_app/localization/language_constrants.dart';
@@ -14,6 +15,7 @@ import 'package:zero_to_100_user_app/provider/product_provider.dart';
 import 'package:zero_to_100_user_app/provider/splash_provider.dart';
 import 'package:zero_to_100_user_app/provider/theme_provider.dart';
 import 'package:zero_to_100_user_app/provider/top_seller_provider.dart';
+import 'package:zero_to_100_user_app/utill/ad_manager.dart';
 import 'package:zero_to_100_user_app/utill/color_resources.dart';
 import 'package:zero_to_100_user_app/utill/custom_themes.dart';
 import 'package:zero_to_100_user_app/utill/dimensions.dart';
@@ -76,7 +78,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-
+    AdManager.showBannerAd();
     singleVendor = Provider.of<SplashProvider>(context, listen: false).configModel.businessMode == "single";
     Provider.of<FlashDealProvider>(context, listen: false).getMegaDealList(true, context, true);
 
@@ -99,7 +101,14 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: ColorResources.getHomeBg(context),
       resizeToAvoidBottomInset: false,
+      floatingActionButtonLocation:
+      FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: SizedBox(
+          width: MediaQuery.of(context).size.width,
+          height: 50,
+          child: AdManager.adContainer ?? Container()),
       body: SafeArea(
+
         child: RefreshIndicator(
           backgroundColor: Theme.of(context).primaryColor,
           onRefresh: () async {
