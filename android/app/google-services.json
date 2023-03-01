@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:659446044158:android:a42d1d7e15100ce48a5caf",
+        "mobilesdk_app_id": "1:659446044158:android:46773de6848b4ed18a5caf",
         "android_client_info": {
-          "package_name": "com.shift_tech.zeroto100.user"
+          "package_name": "com.shift_tech.zeroto100.delivery_boy"
         }
       },
       "oauth_client": [
@@ -29,6 +29,93 @@
             {
               "client_id": "659446044158-4ams0vm6c5fpluosn9p45nq348h6ti1v.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "659446044158-0k1dv9nonegbr67v0jhqjru25lkv7khp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shiftTech.zeroto100.seller"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659446044158:android:ebf17b76a2f710a68a5caf",
+        "android_client_info": {
+          "package_name": "com.shift_tech.zeroto100.seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659446044158-4ams0vm6c5fpluosn9p45nq348h6ti1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-OifqpaIAyzTa2BLspYiU_KlsJrWcy1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659446044158-4ams0vm6c5fpluosn9p45nq348h6ti1v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "659446044158-0k1dv9nonegbr67v0jhqjru25lkv7khp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shiftTech.zeroto100.seller"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659446044158:android:a42d1d7e15100ce48a5caf",
+        "android_client_info": {
+          "package_name": "com.shift_tech.zeroto100.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659446044158-p2a7b16urvip1d5e5irl4i5h1i22bgh3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shift_tech.zeroto100.user",
+            "certificate_hash": "8bffbdb0d17c5ca6953e8bfa6b9f997fcc73576b"
+          }
+        },
+        {
+          "client_id": "659446044158-4ams0vm6c5fpluosn9p45nq348h6ti1v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-OifqpaIAyzTa2BLspYiU_KlsJrWcy1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659446044158-4ams0vm6c5fpluosn9p45nq348h6ti1v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "659446044158-0k1dv9nonegbr67v0jhqjru25lkv7khp.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shiftTech.zeroto100.seller"
+              }
             }
           ]
         }
