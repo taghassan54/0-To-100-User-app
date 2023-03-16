@@ -63,7 +63,11 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+dependency_overrides:
+  modal_bottom_sheet:
+    git:
+      url: https://github.com/danReynolds/modal_bottom_sheet.git
+      path: modal_bottom_sheet
 flutter:
   uses-material-design: true
 
