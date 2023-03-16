@@ -3,7 +3,7 @@ description: A new Flutter setup application for starting a project.
 
 publish_to: 'none'
 
-version: 1.0.1+2
+version: 1.0.3+3
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -59,6 +59,7 @@ dependencies:
   country_currency_pickers: ^2.0.0
   dropdown_search: 5.0.5
   cached_network_image: ^3.2.3
+  google_mobile_ads: ^2.3.0
 
 dev_dependencies:
   flutter_test:
